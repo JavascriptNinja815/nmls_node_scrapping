@@ -1,0 +1,27 @@
+_1_Scraping_NMLS.bat
+
+The script gets the data from the website and NMLS-converts in json format.
+Files are stored in the directory: backup \ rawJson
+
+
+_2_get_JSON_CSV.bat
+
+The second script combines json-files. It also creates CSV.
+Files are stored in the directory: _result
+
+
+config.json
+Here you can set the proxy, and other settings.
+
+-------------------------------------------------------------------------------------------------------
+
+Scraping NMLS
+
+Files are saved for every 5000 request to the server.
+If you want to receive the new data, delete the backup directory
+
+Sometimes errors occur when performing queries. The server does not have time to answer. This is normal. The script pauses for 10 seconds trying to get the data again.
+
+Every day NMLS website updates its data. At this time, the records are not available. The script is paused, and checks the website every 15 minutes.
+
+The script to stop if it receives strange data. For example, if you received IP Ban

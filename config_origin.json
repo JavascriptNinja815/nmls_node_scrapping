@@ -1,0 +1,43 @@
+{
+  "maxID": 1600000, // 1600000 //  .
+
+  /*
+  Maximum nmls ID. Script stop at this ID.
+  Later it is necessary to increase
+  */
+
+  // **********************************************************************************
+  "proxyOn": false,
+
+/*
+    true - Only use proxy
+    false  -  without proxy
+
+    Proxy add "proxy.txt" file.
+    One line - one proxy, without the quotes.
+    Example:
+
+    http://118.151.209.114:80
+    https://user:pass@proxy.server.com:3128
+
+
+ */
+
+  // **********************************************************************************
+
+  "threads": 5
+
+/*
+"Threads" - The number of threads.
+The higher this number:
+  - Faster scraping
+  - More load on your computer.
+  - More pressure on nmls-server
+  - More server error (you can drop the server)
+  - Faster IP ban
+ */
+}
+
+// All settings are applied after the restart of the script.
+
+
